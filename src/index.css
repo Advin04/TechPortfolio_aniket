@@ -140,9 +140,9 @@ img {
   transition: width 0.2s, height 0.2s, background-color 0.2s;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px), (pointer: coarse) {
   .custom-cursor-dot, .custom-cursor-circle {
-    display: none;
+    display: none !important;
   }
 }
 

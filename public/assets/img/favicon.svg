@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f17" />
+      <stop offset="100%" stop-color="#141a23" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#475569" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle -->
+  <rect x="16" y="16" width="480" height="480" rx="140" fill="url(#bgGrad)" stroke="url(#borderGrad)" stroke-width="14" />
+
+  <!-- Monogram A -->
+  <text x="225" y="355" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="290" fill="url(#textGrad)" text-anchor="middle">A</text>
+
+  <!-- Sparkle Icon -->
+  <path d="M 390 120 Q 390 160 430 160 Q 390 160 390 200 Q 390 160 350 160 Q 390 160 390 120 Z" fill="#e2e8f0" />
+</svg>
