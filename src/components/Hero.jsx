@@ -15,7 +15,7 @@ export const Hero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen lg:h-screen lg:max-h-[100vh] pt-20 lg:pt-20 pb-8 lg:pb-4 flex flex-col justify-between overflow-hidden bg-[var(--body-color)]" id="home">
+    <section className="relative min-h-screen lg:h-screen lg:max-h-[100vh] pt-12 sm:pt-16 lg:pt-20 pb-8 lg:pb-4 flex flex-col justify-between overflow-hidden bg-[var(--body-color)]" id="home">
       {/* Background Particles */}
       <Particles particleCount={35} color="hsl(210, 20%, 85%)" />
 
@@ -33,13 +33,13 @@ export const Hero = () => {
       </div>
 
       {/* MAIN CONTENT GRID */}
-      <div className="container mx-auto px-4 sm:px-6 md:px-12 xl:px-16 grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 lg:gap-8 items-end z-10 relative flex-1 pt-2 sm:pt-4 lg:pt-2">
+      <div className="container mx-auto px-4 sm:px-6 md:px-12 xl:px-16 grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6 lg:gap-8 items-end z-10 relative flex-1 pt-0 sm:pt-2 lg:pt-2">
 
         {/* LEFT COLUMN: Name (on mobile), Role & CTA */}
         <div className="lg:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left gap-3 pb-2 sm:pb-4 lg:pb-8 z-20 w-full">
 
           {/* MOBILE 3-Line Stacked Typography Header (In document flow on < lg screens) */}
-          <div className="lg:hidden flex flex-col items-center justify-center leading-[0.85] tracking-tight select-none mb-2 pointer-events-auto cursor-pointer hero-stacked-container">
+          <div className="lg:hidden flex flex-col items-center justify-center leading-[0.85] tracking-tight select-none mt-0 mb-3 pointer-events-auto cursor-pointer hero-stacked-container">
             <h1 className="hero-stacked-typography text-2xl xs:text-3xl sm:text-4xl font-bold uppercase whitespace-nowrap text-fill-hero">
               ANIKET SAXENA
             </h1>
