@@ -85,11 +85,15 @@ export const Hero = () => {
         <div className="lg:col-span-3 flex flex-row flex-wrap lg:flex-col items-center justify-center lg:items-end gap-2 sm:gap-2.5 pb-2 sm:pb-4 lg:pb-8 w-full z-20">
           {socials.map((social, idx) => {
             const Icon = social.icon;
+            const isExternal = social.href.startsWith('http') || (!social.href.startsWith('#') && !social.href.startsWith('mailto:'));
+            const finalHref = social.href.startsWith('http') || social.href.startsWith('mailto:') || social.href.startsWith('#')
+              ? social.href
+              : `https://${social.href}`;
             return (
               <a
                 key={idx}
-                href={social.href}
-                target={social.href.startsWith('http') ? '_blank' : '_self'}
+                href={finalHref}
+                target={isExternal ? '_blank' : '_self'}
                 rel="noopener noreferrer"
                 className="w-auto sm:w-full max-w-[130px] xs:max-w-[140px] sm:max-w-[210px] flex items-center justify-between px-3 xs:px-3.5 sm:px-5 py-1.5 xs:py-2 sm:py-3 rounded-full bg-[var(--container-color)]/90 border border-[var(--border-color)] text-[var(--white-color)] hover:border-[var(--first-color)] hover:bg-[var(--container-color)] hover:shadow-xl hover:shadow-[var(--first-color)]/10 transition-all duration-300 group cursor-pointer"
               >

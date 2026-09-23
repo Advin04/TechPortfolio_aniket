@@ -31,7 +31,7 @@ export const Footer = () => {
         <div className="flex items-center gap-4">
           {portfolioData.socials.github && (
             <a
-              href={portfolioData.socials.github}
+              href={portfolioData.socials.github.startsWith('http') ? portfolioData.socials.github : `https://${portfolioData.socials.github}`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-[var(--body-color)] border border-[var(--border-color)] flex items-center justify-center text-[var(--white-color)] hover:border-[var(--first-color)] hover:text-[var(--first-color)] hover:-translate-y-1 transition-all"
@@ -42,7 +42,7 @@ export const Footer = () => {
           )}
           {portfolioData.socials.linkedin && (
             <a
-              href={portfolioData.socials.linkedin}
+              href={portfolioData.socials.linkedin.startsWith('http') ? portfolioData.socials.linkedin : `https://${portfolioData.socials.linkedin}`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-[var(--body-color)] border border-[var(--border-color)] flex items-center justify-center text-[var(--white-color)] hover:border-[var(--first-color)] hover:text-[var(--first-color)] hover:-translate-y-1 transition-all"
@@ -53,7 +53,7 @@ export const Footer = () => {
           )}
           {portfolioData.socials.instagram && (
             <a
-              href={portfolioData.socials.instagram}
+              href={portfolioData.socials.instagram.startsWith('http') ? portfolioData.socials.instagram : `https://${portfolioData.socials.instagram}`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 rounded-full bg-[var(--body-color)] border border-[var(--border-color)] flex items-center justify-center text-[var(--white-color)] hover:border-[var(--first-color)] hover:text-[var(--first-color)] hover:-translate-y-1 transition-all"
