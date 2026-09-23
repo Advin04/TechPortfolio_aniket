@@ -34,11 +34,11 @@ export function App() {
         <div className="animate-fadeIn relative">
           {/* Global PixelBlast Interactive Canvas Background */}
           <PixelBlast
-            pixelSize={5}
-            gap={18}
+            pixelSize={4}
+            gap={16}
             color="rgba(210, 220, 235, 0.2)"
             activeColor="rgba(255, 255, 255, 0.95)"
-            blastRadius={150}
+            blastRadius={70}
           />
 
           {/* TargetCursor in Silver/Grey */}

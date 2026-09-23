@@ -87,7 +87,7 @@ export const PixelBlast = ({
         const dist = Math.sqrt(dx * dx + dy * dy);
 
         if (dist < blastRadius) {
-          const force = (1 - dist / blastRadius) * 22;
+          const force = (1 - dist / blastRadius) * 10;
           const angle = Math.atan2(dy, dx);
           p.vx += Math.cos(angle) * force;
           p.vy += Math.sin(angle) * force;
