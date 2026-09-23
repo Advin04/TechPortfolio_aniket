@@ -4,7 +4,7 @@ import { portfolioData } from '../data/portfolioData';
 
 export const Footer = () => {
   return (
-    <footer className="bg-[var(--container-color)] border-t border-[var(--border-color)] py-12">
+    <footer className="bg-transparent border-t border-[var(--border-color)] py-12">
       <div className="container mx-auto px-6 flex flex-col items-center text-center gap-8">
         <h2 className="text-xl sm:text-2xl font-bold font-['Syne'] text-[var(--white-color)] max-w-2xl">
           {portfolioData.contact.footerTagline}

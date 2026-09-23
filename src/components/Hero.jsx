@@ -15,7 +15,7 @@ export const Hero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen lg:h-screen lg:max-h-[100vh] pt-12 sm:pt-16 lg:pt-20 pb-8 lg:pb-4 flex flex-col justify-between overflow-hidden bg-[var(--body-color)]" id="home">
+    <section className="relative min-h-screen lg:h-screen lg:max-h-[100vh] pt-12 sm:pt-16 lg:pt-20 pb-8 lg:pb-4 flex flex-col justify-between overflow-hidden bg-transparent" id="home">
       {/* Background Particles */}
       <Particles particleCount={35} color="hsl(210, 20%, 85%)" />
 

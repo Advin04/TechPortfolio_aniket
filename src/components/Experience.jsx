@@ -7,7 +7,7 @@ export const Experience = () => {
   const [activeTab, setActiveTab] = useState('experience');
 
   return (
-    <section className="section bg-[var(--container-color)] relative overflow-hidden" id="experience">
+    <section className="section bg-transparent relative overflow-hidden" id="experience">
       {/* Background Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-[var(--first-color)]/5 rounded-full blur-3xl pointer-events-none" />
 

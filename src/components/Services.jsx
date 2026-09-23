@@ -9,7 +9,7 @@ export const Services = () => {
   const defaultIcons = [Code, Server, Layout, Search];
 
   return (
-    <section className="section bg-[var(--container-color)] border-y border-[var(--border-color)]" id="service">
+    <section className="section bg-transparent border-y border-[var(--border-color)]" id="service">
       <div className="container mx-auto px-6 max-w-5xl">
         <h2 className="section__title">
           <span>My</span> Services

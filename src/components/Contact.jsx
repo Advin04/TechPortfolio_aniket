@@ -23,7 +23,7 @@ export const Contact = () => {
   };
 
   return (
-    <section className="section bg-[var(--container-color)] border-t border-[var(--border-color)]" id="contact">
+    <section className="section bg-transparent border-t border-[var(--border-color)]" id="contact">
       <div className="container mx-auto px-6">
         <h2 className="section__title">
           Contact <span>Me</span>

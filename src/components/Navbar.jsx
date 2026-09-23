@@ -4,7 +4,7 @@ import { MagnetButton } from './reactbits/MagnetButton';
 import { AnimatedThemeToggler } from './magicui/AnimatedThemeToggler';
 import { portfolioData } from '../data/portfolioData';
 
-export const Navbar = () => {
+export const Navbar = ({ onResetGateway }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -77,7 +77,17 @@ export const Navbar = () => {
             ))}
           </ul>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2.5">
+            {onResetGateway && (
+              <button
+                onClick={onResetGateway}
+                className="text-xs font-semibold px-3 py-1.5 rounded-full bg-[var(--container-color)] border border-[var(--border-color)] text-[var(--text-color)] hover:text-white hover:border-[var(--first-color)] transition-all flex items-center gap-1.5 cursor-pointer"
+                title="Switch Domain Gateway"
+              >
+                <Sparkles className="w-3.5 h-3.5 text-[var(--first-color)]" />
+                <span>Portal</span>
+              </button>
+            )}
             <AnimatedThemeToggler />
             <MagnetButton href="#contact" className="btn-primary flex items-center gap-2 text-xs py-2 px-5">
               <span>Contact</span>
@@ -117,10 +127,22 @@ export const Navbar = () => {
                 </li>
               ))}
             </ul>
+            {onResetGateway && (
+              <button
+                onClick={() => {
+                  setMenuOpen(false);
+                  onResetGateway();
+                }}
+                className="btn-secondary text-center justify-center text-xs py-2 w-full flex items-center gap-1.5"
+              >
+                <Sparkles className="w-3.5 h-3.5 text-[var(--first-color)]" />
+                <span>Switch Portal Gateway</span>
+              </button>
+            )}
             <a
               href="#contact"
               onClick={() => setMenuOpen(false)}
-              className="btn-primary text-center justify-center mt-2 text-sm"
+              className="btn-primary text-center justify-center text-sm"
             >
               Contact me <Send className="w-4 h-4 ml-1" />
             </a>

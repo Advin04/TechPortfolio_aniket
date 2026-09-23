@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { SplashScreen } from './components/SplashScreen';
+import { PortalGateway } from './components/PortalGateway';
 import { TargetCursor } from './components/reactbits/TargetCursor';
 import { PixelBlast } from './components/reactbits/PixelBlast';
 import { Navbar } from './components/Navbar';
@@ -13,15 +14,23 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
 export function App() {
-  const [showWebsite, setShowWebsite] = useState(false);
+  const [showSplash, setShowSplash] = useState(true);
+  const [selectedDomain, setSelectedDomain] = useState(null); // null = PortalGateway, 'tech' = Tech Portfolio
 
   return (
     <div className="min-h-screen bg-[var(--body-color)] text-[var(--text-color)] selection:bg-[var(--first-color)] selection:text-[var(--black-color)] relative">
-      {!showWebsite && (
-        <SplashScreen onComplete={() => setShowWebsite(true)} />
+      {/* 1. Splash Screen */}
+      {showSplash && (
+        <SplashScreen onComplete={() => setShowSplash(false)} />
       )}
 
-      {showWebsite && (
+      {/* 2. Portal Gateway Domain Selection Screen (Shows after Splash until Tech or Media domain is chosen) */}
+      {!showSplash && !selectedDomain && (
+        <PortalGateway onSelectTech={() => setSelectedDomain('tech')} />
+      )}
+
+      {/* 3. Tech Portfolio Website (Shows when 'tech' domain is selected) */}
+      {!showSplash && selectedDomain === 'tech' && (
         <div className="animate-fadeIn relative">
           {/* Global PixelBlast Interactive Canvas Background */}
           <PixelBlast
@@ -34,7 +43,7 @@ export function App() {
 
           {/* TargetCursor in Silver/Grey */}
           <TargetCursor color="hsl(210, 20%, 85%)" />
-          <Navbar />
+          <Navbar onResetGateway={() => setSelectedDomain(null)} />
           <main className="relative z-10">
             <Hero />
             <About />

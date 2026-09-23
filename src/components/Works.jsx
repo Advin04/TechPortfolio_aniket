@@ -6,7 +6,7 @@ import { portfolioData } from '../data/portfolioData';
 
 export const Works = () => {
   return (
-    <section className="section bg-[var(--body-color)] relative overflow-hidden" id="work">
+    <section className="section bg-transparent relative overflow-hidden" id="work">
       {/* Background Glow */}
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[var(--first-color)]/5 rounded-full blur-3xl pointer-events-none" />
 
