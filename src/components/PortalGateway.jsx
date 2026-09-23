@@ -58,16 +58,18 @@ export const PortalGateway = ({ onSelectTech }) => {
         {/* MEDIA PORTFOLIO FOLDER */}
         <InteractiveFolder
           title="Media Portfolio"
-          subtitle="Cinematography, video editing, creative direction, and digital content production."
-          badgeText="Coming Soon"
+          subtitle="2D animation, motion graphics, video editing, and creative production."
+          badgeText="Live Site"
           color="#ec4899"
           cards={[
-            { title: 'Cinematography', subtitle: 'Films & Camera' },
+            { title: '2D Animation', subtitle: 'Motion & Visuals' },
             { title: 'Video Editing', subtitle: 'Post Production' },
-            { title: 'Showreels', subtitle: 'Coming Soon' },
+            { title: 'Media Work', subtitle: 'Launch Site ➔' },
           ]}
-          isAvailable={false}
-          onClick={() => setShowMediaModal(true)}
+          isAvailable={true}
+          onClick={() => {
+            window.open('https://mediaportfolio-aniket.vercel.app/', '_blank');
+          }}
         />
       </motion.div>
 
@@ -103,19 +105,18 @@ export const PortalGateway = ({ onSelectTech }) => {
                 Media Portfolio
               </h3>
               <p className="text-xs sm:text-sm text-[var(--text-color)] leading-relaxed mb-6">
-                Film showreels, video production, and creative media showcases are currently in production and will launch soon!
+                2D animation, motion graphics, video editing, and creative production portfolio.
               </p>
 
               <div className="flex flex-col gap-3">
-                <button
-                  onClick={() => {
-                    setShowMediaModal(false);
-                    onSelectTech();
-                  }}
-                  className="btn-primary w-full justify-center py-3 text-xs sm:text-sm"
+                <a
+                  href="https://mediaportfolio-aniket.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary w-full justify-center py-3 text-xs sm:text-sm flex items-center gap-1.5"
                 >
-                  Enter Tech Portfolio Instead ➔
-                </button>
+                  <span>Launch Media Portfolio</span> ➔
+                </a>
                 <button
                   onClick={() => setShowMediaModal(false)}
                   className="btn-secondary w-full justify-center py-2.5 text-xs text-white"

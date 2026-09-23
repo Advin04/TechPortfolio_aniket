@@ -27,7 +27,8 @@ export const portfolioData = {
   socials: {
     github: "https://github.com/Advin04",
     linkedin: "https://linkedin.com/in/aniket-saxena-a39b02223/",
-    email: "mailto:aniket04ofc@gmail.com"
+    email: "mailto:aniket04ofc@gmail.com",
+    mediaPortfolio: "https://mediaportfolio-aniket.vercel.app/"
   },
 
   // Education
