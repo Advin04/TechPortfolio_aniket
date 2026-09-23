@@ -1,30 +1,60 @@
-# Responsive Portfolio Website Bianca
+# 💻 Interactive Developer Portfolio Website
 
-This project is part of a step-by-step YouTube tutorial in which we build a responsive portfolio website Bianca from scratch using HTML, CSS and JavaScript.
+A modern, responsive, high-performance developer portfolio website built using **React 18**, **Vite**, **Tailwind CSS**, and modern UI animation components.
 
-## 🎬 [Watch the Demo & Code](https://youtu.be/JSFIGIA9Zrk) 
+---
 
-![preview img](/preview.png) 
+## 🚀 Key Features
 
-## 📌 Project Features
-- Fully responsive portfolio website Bianca (Mobile First Methodology).
-- Clear and semantic HTML structure.
-- Use of CSS variables and modern JavaScript functions.
-- Smooth scrolling between sections.
-- Scroll animations.
-- Compatible with all modern browsers and devices.
+- **⚡ Widescreen (16:9) & Mobile First Responsive Design:** Fully responsive layout optimized for all screen sizes from mobile devices to ultra-wide desktop monitors.
+- **✨ 3-Line Stacked Hero Typography:** Ultra-wide Google Font *Syncopate* typography stack with interactive hover glow effects.
+- **🎯 Tactical Reticle Target Cursor:** Custom interactive reticle cursor with element lock snapping across UI components.
+- **💼 Interactive Work & Education Tabs:** Switchable timeline view for experience and education history.
+- **🎨 Glassmorphism & Modern Theme Toggler:** Dark mode aesthetic with HSL color tokens, backdrop blur cards, and view-transition animations.
+- **📱 Touch & Mobile Optimized:** Flexible grid layouts tailored for small screens and touch devices.
 
-## 📦 Download the resources directly
-1. Click the green **code** button.
-2. Click **Download ZIP**.
-3. Extract the ZIP file and open the project in your code editor.
+---
 
-## 📥 Clone or Fork the repository
-You can **clone** the repository to your local machine or **fork** it in your GitHub account to get all the project's resources.
+## 🛠️ Tech Stack & Dependencies
+
+| Category | Technology Used |
+| :--- | :--- |
+| **Core Framework** | [React 18](https://react.dev/) + [Vite](https://vitejs.dev/) |
+| **Styling** | [Tailwind CSS](https://tailwindcss.com/) + Vanilla CSS Variables |
+| **Icons & Animations** | [Lucide React](https://lucide.dev/), [Framer Motion](https://www.framer.com/motion/) |
+| **Typography** | Google Fonts (*Syncopate*, *Syne*, *Space Grotesk*, *Poppins*) |
+
+---
+
+## 📦 Getting Started
+
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) (v16 or higher) installed on your system.
+
+### Installation & Development Server
 
 ```bash
-# Clone the repository using HTTPS
-git clone https://github.com/bedimcode/responsive-porfolio-website-Bianca.git
+# 1. Clone the repository
+git clone https://github.com/Advin04/TechPortfolio_aniket.git
+
+# 2. Navigate to project directory
+cd TechPortfolio_aniket
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
 ```
 
-Designed & developed with ❤️ by **[Bedimcode](https://www.youtube.com/@Bedimcode)** 
+### Production Build
+
+```bash
+npm run build
+```
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
